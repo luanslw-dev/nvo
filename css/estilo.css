@@ -136,7 +136,10 @@ nav.desktop ul li a {
   margin: 15px 0;
 }
 .quem-somos-box {
-
+max-width: 300px;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
 }
 
 /*Footer*/
