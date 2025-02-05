@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 150px;
+  height: 150px;
+}
+.interface {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 4%;
+}
+
+main {
+  max-width: 1280px;
+  background-color: gray;
+  margin: auto;
+  height: auto;
+  padding: 20px 4%;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*estiloi menu*/
+header {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.desktop ul {
+  display: flex;
+}
+nav.desktop ul li {
+  list-style: none;
+
+  padding: 8px;
+}
+nav.desktop ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.imagen-markintg img {
+  width: 350px;
+  height: 400px;
+}
+.interface nav.desktop a:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+/*ESTILO MENU MOBILE*/
+.btn-abrir-menu i {
+  color: gray;
+  font-size: 40px;
+  display: none;
+}
+.menu-mobile {
+  background-color: #000;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100000;
+  width: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.menu-mobile .btn-fechar i {
+  color: gray;
+  font-size: 30px;
+}
+.menu-mobile .btn-fechar {
+  padding: 20px 5%;
+}
+.menu-mobile nav ul {
+  text-align: right;
+}
+.menu-mobile nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px 8%;
+  display: block;
+}
+.menu-mobile nav ul li a:hover {
+  background-color: rgb(128, 128, 128);
+}
+.overlay-menu {
+  background-color: #000000a7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 8888;
+  display: none;
+}
+
+/*formatação dos box de serviços*/
+
+.servicos .servicos-box {
+  padding: 40px;
+  margin-top: 45px;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.servicos .servicos-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #ffffff3f;
+}
+.servicos .servicos-box i {
+  font-size: 70px;
+  color: red;
+}
+.servicos .servicos-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+.quem-somos-box {
+  box-sizing: border-box;
+  width: 500px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+/*Footer*/
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.logo-footer img {
+  width: 100px;
+  height: 100px;
+}
+
+.border {
+  border-top: 2px solid red;
+}
+.btn-social i {
+  font-size: 40px;
+  padding: 20px;
+  color: red;
+}
+h4 {
+  color: red;
+  font-size: 40px;
+}
+
+.interface-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-footer {
+  padding: 20px;
+}
+.line-footer i {
+  font-size: 22px;
+  color: red;
+}
+.line-footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 1020px) {
+  .servicos .interface {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-abrir-menu i {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+/*estilo slide*/
+.slider {
+  height: 50vh;
+  position: relative;
+}
+
+.slider .slider-container .slider-box {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.slider .slider-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .slider-box::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, #000, transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider-container .slider-box.ativo {
+  opacity: 1;
+  z-index: 1111;
+}
+
+/*estilo das setas*/
+.setas {
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 11513;
+}
+.setas button {
+  width: 40px;
+  height: 40px;
+  background-color: #747474;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+.setas button:hover {
+  background-color: #fff;
+}
+/*estilo buttaon*/
+.btn-nav-box {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  z-index: 77777;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn-nav-box .btn-nav {
+  width: 30px;
+  height: 10px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn-nav-box .btn-nav:hover {
+  background-color: #fff;
+}
+
+.btn-nav-box .btn-nav.ativo {
+  background-color: #fff;
+}
