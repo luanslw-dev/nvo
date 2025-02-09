@@ -203,6 +203,8 @@ h4 {
 .slider {
   height: 50vh;
   position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .slider .slider-container .slider-box {
@@ -211,6 +213,7 @@ h4 {
   overflow: hidden;
   opacity: 0;
   transition: 0.5s;
+  display: inline-block;
 }
 .slider .slider-box img {
   width: 100%;
