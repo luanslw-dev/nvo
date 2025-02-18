@@ -4,13 +4,15 @@
 }
 
 .logo img {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 200px;
+  border-radius: 50%;
 }
 .interface {
   display: flex;
   justify-content: space-around;
   padding: 20px 4%;
+  
 }
 
 main {
@@ -29,8 +31,9 @@ h1 {
 
 /*estiloi menu*/
 header {
-  padding: 40px 4%;
-  box-shadow: 0 0 40px 10px #ffffff1d;
+  padding: 10px 4%;
+  box-shadow: 0 0 40px 10px #fff;
+  background-color: #0000005e;
 }
 header > .interface {
   display: flex;
@@ -48,16 +51,15 @@ nav.desktop ul li {
 }
 nav.desktop ul li a {
   text-decoration: none;
-  color: black;
+  color: #fff;
   text-transform: uppercase;
 }
 .imagen-markintg img {
   width: 350px;
   height: 400px;
 }
-.interface nav.desktop a:hover {
-  color: red;
-  transform: scale(1.2);
+.interface nav.desktop  a:hover {
+  transform: scale(5.2);
 }
 
 /*ESTILO MENU MOBILE*/
